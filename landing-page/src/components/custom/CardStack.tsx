@@ -2,27 +2,40 @@
 
 import { useState } from "react";
 import TinderCard from "react-tinder-card";
+import Image from "next/image";
+import {FaArrowRight, FaBriefcase} from "react-icons/fa6";
+import {Badge} from "@/components/ui/badge";
 
 const db = [
   {
-    name: "Nicholas Boey",
-    url: "/img/nicholas.jpeg",
+    name: "Elise Chiong",
+    job: "Product Designer",
+    url: "/img/elise.jpeg",
+    skills: []
   },
   {
-    name: "WeoyYang Ang",
+    name: "Weoy Yang Ang",
+    job: "Software Engineer",
     url: "/img/weoyyang.jpeg",
+    skills: []
   },
   {
     name: "Joey Lau",
+    job: "Data Scientist",
     url: "/img/joey.jpeg",
+    skills: []
   },
   {
-    name: "Ten Hou Siang",
+    name: "Tan Hao Xiang",
+    job: "Product Manager",
     url: "/img/tanhaoxiang.jpeg",
+    skills: []
   },
   {
-    name: "Elise Chiong",
-    url: "/img/elise.jpeg",
+    name: "Nicholas Boey",
+    job: "Blockchain Researcher",
+    url: "/img/nicholas.jpeg",
+    skills: ["Solidity", "Smart Contract", "Cryptography", "Layer 2 Solutions", "Decentralized Governance"]
   },
 ];
 
@@ -31,15 +44,15 @@ export default function CardStack() {
   const [lastDirection, setLastDirection] = useState("");
 
   const swiped = (direction: string, nameToDelete: string) => {
-    console.log("removing " + nameToDelete);
     setLastDirection(direction);
+    console.log(lastDirection);
 
-    // Wait for 2 seconds before removing the card
+    // Wait for 1 second before removing the card
     setTimeout(() => {
       setCharacters((prevCharacters) =>
         prevCharacters.filter((character) => character.name !== nameToDelete)
       );
-    }, 2000); // 2 seconds delay
+    }, 1000);
   };
 
   const outOfFrame = (name: string) => {
@@ -48,34 +61,44 @@ export default function CardStack() {
 
   return (
     <>
-      <div className="">
-        <div className="w-[90vw] max-w-[260px] h-[300px] relative">
-          {characters.map((character) => (
-            <TinderCard
-              className="absolute"
-              key={character.name}
-              onSwipe={(dir: string) => swiped(dir, character.name)}
-              onCardLeftScreen={() => outOfFrame(character.name)}
-              preventSwipe={["up", "down"]}
-            >
-              <div
-                style={{ backgroundImage: "url(" + character.url + ")" }}
-                className="relative bg-[#FFFFFF] w-[80vw] max-w-[260px] h-[300px] rounded-2xl bg-cover bg-center"
-              > 
+      {characters.map((character) =>
+        <TinderCard
+          className="absolute w-[358px] max-w-[90%] h-[533px] max-h-[80%] p-4 bg-white rounded-3xl"
+          key={character.name}
+          onSwipe={(dir: string) => swiped(dir, character.name)}
+          onCardLeftScreen={() => outOfFrame(character.name)}
+          preventSwipe={["up", "down"]}
+        >
+          <Image
+            alt={character.name}
+            src={character.url}
+            width={326}
+            height={334}
+            className="bg-[#FFFFFF] rounded-2xl !w-[326px] !h-[334px] mx-auto"
+          >
+          </Image>
+          <div className="mt-4 space-y-1">
+            <h1 className="font-bold text-4xl">
+              {character.name}
+            </h1>
+            <h3 className="flex items-center gap-x-1.5 font-bold text-[#626262]">
+              <FaBriefcase />{character.job}
+            </h3>
+          </div>
+          <div className="mt-2 flex flex-wrap gap-2 items-center">
+              {character.skills.slice(0,3).map((skill, index) => (
+                <Badge variant="skill" key={index}>
+                    {skill}
+                </Badge>
+              ))}
+            {character.skills.length > 3 && (
+              <div className="flex items-center gap-x-1 text-[#0582CA] text-sm">
+                See More <FaArrowRight />
               </div>
-              {/* Black overlay */}
-              <div className="absolute bottom-0 left-0 w-full h-[10%] bg-black opacity-70 rounded-b-2xl" />
-            </TinderCard>
-          ))}
-        </div>
-        {lastDirection ? (
-          <h2 className="w-[100%] justify-center flex text-[#FFFFFF]">
-            You swiped {lastDirection}
-          </h2>
-        ) : (
-          <h2 className="w-[100%] justify-center flex text-[#FFFFFF]" />
-        )}
-      </div>
+            )}
+          </div>
+        </TinderCard>
+      )}
     </>
   );
 }

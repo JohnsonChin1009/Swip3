@@ -20,6 +20,7 @@ const badgeVariants = cva(
         orange: "border-transparent bg-[#FFDF75] text-[#C45029]",
         blue: "border-transparent bg-[#A1FFFF] text-[#2D8DD8]",
         green: "border-transparent bg-[#AEFF87] text-[#3D9852]",
+        skill: "border-transparent bg-[#EEF2FF] text-[#141A21] font-medium text-base",
       },
     },
     defaultVariants: {
