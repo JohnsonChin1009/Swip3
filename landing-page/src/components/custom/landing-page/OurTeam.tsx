@@ -1,6 +1,6 @@
 "use client";
 
-import ProfileCard, { ColorScheme } from "@/components/custom/ProfileCard";
+import ProfileCard, { ColorScheme } from "@/components/custom/landing-page/ProfileCard";
 import OurTeamHeader from "./OurTeamHeader";
 
 export interface TeamMember {

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Badge } from "@/components/ui/badge"
-import { TeamMember } from "@/components/custom/OurTeam";
+import { TeamMember } from "@/components/custom/landing-page/OurTeam";
 import Link from "next/link";
 
 export type ColorScheme = 'pink' | 'purple' | 'orange' | 'blue' | 'green';

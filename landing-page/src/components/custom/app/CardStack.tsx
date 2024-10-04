@@ -3,8 +3,8 @@
 import { useState } from "react";
 import TinderCard from "react-tinder-card";
 import Image from "next/image";
-import {FaArrowRight, FaBriefcase} from "react-icons/fa6";
-import {Badge} from "@/components/ui/badge";
+import { FaArrowRight, FaBriefcase } from "react-icons/fa6";
+import { Badge } from "@/components/ui/badge";
 
 const db = [
   {
@@ -60,7 +60,7 @@ export default function CardStack() {
   };
 
   return (
-    <>
+    <div className="flex justify-center items-center min-h-screen overflow-hidden bg-[#F5F5F5]">
       {characters.map((character) =>
         <TinderCard
           className="absolute w-[358px] max-w-[90%] h-[533px] max-h-[80%] p-4 bg-white rounded-3xl"
@@ -99,6 +99,6 @@ export default function CardStack() {
           </div>
         </TinderCard>
       )}
-    </>
+    </div>
   );
 }
