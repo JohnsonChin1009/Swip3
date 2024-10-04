@@ -1,26 +1,26 @@
 "use client";
 
-import { User, X, Heart, MessageSquare } from 'lucide-react';
+import { FaHeart, FaMessage, FaUser, FaX } from "react-icons/fa6";
 
-const BottomBar = () => {
+export default function BottomNavBar() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg">
-      <div className="flex justify-around items-center h-16 px-4">
-        <button className="p-3 rounded-full bg-gray-100">
-          <User className="w-5 h-5 text-gray-600" />
-        </button>
-        <button className="p-4 rounded-full bg-gray-100">
-          <X className="w-6 h-6 text-black" />
-        </button>
-        <button className="p-3 rounded-full bg-gray-100">
-          <Heart className="w-5 h-5 text-blue-500" fill="currentColor" />
-        </button>
-        <button className="p-3 rounded-full bg-gray-100">
-          <MessageSquare className="w-5 h-5 text-gray-600" />
-        </button>
+    <div className="min-h-[650px] min-[376px]:min-h-[700px] w-full relative flex justify-center">
+      <div className="absolute bottom-0">
+        <div className="px-10 w-[358px] flex justify-between items-center">
+          <button className="p-3 bg-white rounded-full shadow-mobile-bottom-navbar-button">
+            <FaUser className="size-[15px] text-[#CCCCCC]"/>
+          </button>
+          <button className="p-4 bg-white rounded-full shadow-mobile-bottom-navbar-button">
+            <FaX className="size-[23px]"/>
+          </button>
+          <button className="p-4 bg-white rounded-full shadow-mobile-bottom-navbar-button">
+            <FaHeart className="size-[23px] text-[#5076FF]"/>
+          </button>
+          <button className="p-3 bg-white rounded-full shadow-mobile-bottom-navbar-button">
+            <FaMessage className="size-[15px] text-[#CCCCCC]"/>
+          </button>
+        </div>
       </div>
     </div>
   );
 };
-
-export default BottomBar;

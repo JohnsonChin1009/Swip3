@@ -23,6 +23,10 @@ const config: Config = {
 			md: 'calc(var(--radius) - 2px)',
 			sm: 'calc(var(--radius) - 4px)'
 		},
+		boxShadow: {
+			'mobile-bottom-navbar-button': '0px 4px 4px 0px #0000001A',
+			'mobile-card': '0px 11px 9px 0px #38A4C908',
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
