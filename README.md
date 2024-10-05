@@ -26,7 +26,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#proof-of-deployment">Problem Statement</a></li>
+    <li><a href="#proof-of-deployment">Proof of Deployment</a></li>
     <li><a href="#problem-statement">Problem Statement</a></li>
     <li><a href="#technology-stack">Technology Stack</a></li>
     <li><a href="#association-algorithms">Association Algorithms</a></li>
