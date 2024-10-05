@@ -1,11 +1,10 @@
 "use client";
 
 import { FaHeart, FaMessage, FaUser, FaX } from "react-icons/fa6";
-import { signOut } from "next-auth/react";
 
 export default function BottomNavBar() {
   return (
-    <div className="w-full flex justify-center mt-3"> {/* Added mt-3 for 12px spacing */}
+    <div className="w-full flex justify-center mt-3">
       <div className="px-10 w-[358px] flex justify-between items-center">
         <button className="p-3 bg-white rounded-full shadow-mobile-bottom-navbar-button">
           <FaUser className="size-[15px] text-[#CCCCCC]"/>
