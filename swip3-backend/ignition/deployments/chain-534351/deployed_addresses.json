@@ -1,3 +1,4 @@
 {
-  "UserProfileModule#UserProfile": "0x49e00C20c277bE3920AE14335066A451E14d7134"
+  "UserProfileModule#UserProfile": "0x49e00C20c277bE3920AE14335066A451E14d7134",
+  "MessageStoreModule#MessageStore": "0xa79FB8c0c01F137746F3F1865D38524b0A07a353"
 }
