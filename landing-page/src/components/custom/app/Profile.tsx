@@ -55,7 +55,7 @@ export default function ButtonHeader() {
 
           {/* Skills */}
           <div className="px-4 pb-4">
-            <h2 className="text-lg font-semibold mb-3">Top 5 Skills We're Seeking</h2>
+            <h2 className="text-lg font-semibold mb-3">Top 5 Skills We&apos;re Seeking</h2>
             <div className="flex flex-wrap gap-2">
               {['Solidity', 'Smart Contract', 'Layer 2 Solutions', 'Cryptography', 'Decentralized Governance'].map((skill) => (
                 <span key={skill} className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm">
