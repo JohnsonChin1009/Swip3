@@ -77,7 +77,7 @@ export default function PrivacyPolicy() {
       <section className="mb-6">
         <h2 className="text-xl sm:text-2xl font-semibold mb-2">Changes to the Privacy Policy</h2>
         <p className="text-sm sm:text-base">
-          We may update this Privacy Policy. Changes will be posted with an updated "Effective Date."
+          We may update this Privacy Policy. Changes will be posted with an updated &quot;Effective Date.&quot;
         </p>
       </section>
 
