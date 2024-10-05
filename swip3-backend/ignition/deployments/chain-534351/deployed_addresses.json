@@ -1,4 +1,6 @@
 {
   "UserProfileModule#UserProfile": "0x49e00C20c277bE3920AE14335066A451E14d7134",
-  "MessageStoreModule#MessageStore": "0xa79FB8c0c01F137746F3F1865D38524b0A07a353"
+  "MessageStoreModule#MessageStore": "0xa79FB8c0c01F137746F3F1865D38524b0A07a353",
+  "CounterModule#Counter": "0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB",
+  "CompanyRating#CompanyRating": "0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc"
 }

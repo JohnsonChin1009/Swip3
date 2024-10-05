@@ -6,6 +6,7 @@ import Hero from "@/components/custom/landing-page/Hero";
 import Footer from "@/components/custom/landing-page/Footer";
 import OurTeam from "@/components/custom/landing-page/OurTeam";
 
+
 export default function Home() {
     return (
         <>
