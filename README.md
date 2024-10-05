@@ -88,13 +88,12 @@ These trends highlight the Web3 job market as one of the fastest-growing sectors
 
 Our platform leverages cutting-edge technologies to ensure a seamless, secure, and intuitive experience for both recruiters and job seekers. 
 
-- **Frontend**: Next.js, React.js
-- **Backend**: Node.js, Express
-- **Blockchain**: Ethereum, Polygon (for minting verifiable skill NFTs)
-- **Database**: IPFS (for decentralized data storage)
-- **Authentication**: zkLogin for decentralized, privacy-preserving user verification via Twitter
-- **Verification**: DeBank API for secondary verification and trust building
-- **Chat Integration**: Telegram API
+- **Frontend**: Next.js, shadcn, MagicUi, TailwindCSS
+- **Backend**: Solidity, Python, Hardhat, Scroll Sepholia, EtherJS, ORA, Llama3
+- **Blockchain**: Ethereum (Scroll Sepolia Testnet)
+- **Authentication**: WorldCoin, MetaMask (WorldID)
+- **API**: EtherJS
+- **Large Language Model**: Llama3, Stable Diffusion
 - **AI Algorithms**: Custom association algorithms for job and candidate matching
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
