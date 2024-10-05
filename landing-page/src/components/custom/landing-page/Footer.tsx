@@ -10,7 +10,7 @@ export default function Footer() {
         <>
             <footer className="py-4 flex justify-between items-center px-4 lg:px-[70px] border-t">
                 <div className="w-[80px] h-[40px] relative">
-                    <Link href="/landing-page/public">
+                    <Link href="/">
                         <Image
                           src="/logo.svg"
                           alt="Company Logo"
