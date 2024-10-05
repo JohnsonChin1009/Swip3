@@ -26,7 +26,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#proof-of-deployment">Proof of Deployment</a></li>
+    <li><a href="#proof-of-deployment">Proof of Contract Deployments</a></li>
     <li><a href="#problem-statement">Problem Statement</a></li>
     <li><a href="#technology-stack">Technology Stack</a></li>
     <li><a href="#association-algorithms">Association Algorithms</a></li>
@@ -37,7 +37,7 @@
   </ol>
 </details>
 
-## 🤸🏽 Proof of Deployment
+## 🤸🏽 Proof of Contract Deployments
 <h2>✅ Scroll</h2>
 <img src="model/scroll.png" alt="Scroll Logo" width="100" />
 
@@ -55,6 +55,27 @@
   <li><strong>Smart Contract Address:</strong> 0xa03943826246955af459280d84bdfbea66f7e42c
 </li>
   <li><a href="https://sepolia.scrollscan.com/address/0xa03943826246955af459280d84bdfbea66f7e42c">View on Sepolia Scroll</a></li>
+</ul>
+
+<hr>
+
+<h2>✅ Counter Contract Address</h2>
+
+<ul>
+  <li><strong>Smart Contract Address:</strong> 0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB
+</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB">View on Sepolia Scroll</a></li>
+</ul>
+
+<hr>
+
+<h2>✅ Company Rating Contract Address
+</h2>
+
+<ul>
+  <li><strong>Company Rating Contract Address:</strong> 0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc
+</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc">View on Sepolia Scroll</a></li>
 </ul>
 
 <hr>
