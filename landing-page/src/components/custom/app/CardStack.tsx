@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FaArrowRight, FaBriefcase } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
 import BottomNavBar from "@/components/custom/app/BottomNavBar";
+import { signOut } from "next-auth/react";
 
 const db = [
   {
@@ -61,49 +62,53 @@ export default function CardStack() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden flex justify-center items-start pt-[36px]"> {/* Added pt-[36px] */}
-      {characters.map((character, index) => {
-        return (
-          <TinderCard
-            className={`absolute w-[358px] max-w-[90%] h-[533px] max-h-[80%] p-4 bg-white rounded-3xl ${index === characters.length - 1 ? "z-[2] shadow-mobile-card" : "z-[1]"}`}
-            key={character.name}
-            onSwipe={(dir: string) => swiped(dir, character.name)}
-            onCardLeftScreen={() => outOfFrame(character.name)}
-            preventSwipe={["up", "down"]}
-          >
-            <Image
-              alt={character.name}
-              src={character.url}
-              width={326}
-              height={334}
-              className="bg-[#FFFFFF] rounded-2xl !w-[326px] !h-[334px] mx-auto"
-            />
-            <div className="mt-4 space-y-1">
-              <h1 className="font-bold text-4xl">
-                {character.name}
-              </h1>
-              <h3 className="flex items-center gap-x-1.5 font-bold text-[#626262]">
-                <FaBriefcase />{character.job}
-              </h3>
-            </div>
-            <div className="mt-2 flex flex-wrap gap-2 items-center">
-              {character.skills.slice(0, 3).map((skill, index) => (
-                <Badge variant="skill" key={index}>
-                  {skill}
-                </Badge>
-              ))}
-              {character.skills.length > 3 && (
-                <div className="flex items-center gap-x-1 text-[#0582CA] text-sm">
-                  See More <FaArrowRight />
-                </div>
-              )}
-            </div>
-          </TinderCard>
-        )
-      })}
-      {characters.length > 0 && (
-        <BottomNavBar />
-      )}
-    </div>
+    <>
+      <button onClick={() => signOut()}>Sign Out</button>
+      <div
+        className="relative min-h-screen overflow-hidden flex justify-center items-start pt-[36px]"> {/* Added pt-[36px] */}
+        {characters.map((character, index) => {
+          return (
+            <TinderCard
+              className={`absolute w-[358px] max-w-[90%] h-[533px] max-h-[80%] p-4 bg-white rounded-3xl ${index === characters.length - 1 ? "z-[2] shadow-mobile-card" : "z-[1]"}`}
+              key={character.name}
+              onSwipe={(dir: string) => swiped(dir, character.name)}
+              onCardLeftScreen={() => outOfFrame(character.name)}
+              preventSwipe={["up", "down"]}
+            >
+              <Image
+                alt={character.name}
+                src={character.url}
+                width={326}
+                height={334}
+                className="bg-[#FFFFFF] rounded-2xl !w-[326px] !h-[334px] mx-auto"
+              />
+              <div className="mt-4 space-y-1">
+                <h1 className="font-bold text-4xl">
+                  {character.name}
+                </h1>
+                <h3 className="flex items-center gap-x-1.5 font-bold text-[#626262]">
+                  <FaBriefcase/>{character.job}
+                </h3>
+              </div>
+              <div className="mt-2 flex flex-wrap gap-2 items-center">
+                {character.skills.slice(0, 3).map((skill, index) => (
+                  <Badge variant="skill" key={index}>
+                    {skill}
+                  </Badge>
+                ))}
+                {character.skills.length > 3 && (
+                  <div className="flex items-center gap-x-1 text-[#0582CA] text-sm">
+                    See More <FaArrowRight/>
+                  </div>
+                )}
+              </div>
+            </TinderCard>
+          )
+        })}
+        {characters.length > 0 && (
+          <BottomNavBar/>
+        )}
+      </div>
+    </>
   );
 }

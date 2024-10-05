@@ -1,6 +1,7 @@
 "use client";
 
 import { FaHeart, FaMessage, FaUser, FaX } from "react-icons/fa6";
+import { signOut } from "next-auth/react";
 
 export default function BottomNavBar() {
   return (
