@@ -75,10 +75,10 @@ export default function PWAInstallPrompt() {
 
   return (
     <>
-      <div className="fixed bottom-4 left-1 right-1 bg-gradient-to-br from-[#e0f7fa] to-[#e6e6fa] dark:bg-gray-800 rounded-3xl shadow-xl p-4 mx-auto w-[370px] max-w-[95%] z-50">
+      <div className="fixed bottom-4 left-1 right-1 bg-gradient-to-br from-[#e0f7fa] to-[#e6e6fa] rounded-3xl shadow-xl p-4 mx-auto w-[370px] max-w-[95%] z-50">
         <button
           onClick={handleClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 p-2.5"
+          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 p-2.5"
         >
           <FaX size={14} />
         </button>
@@ -88,11 +88,11 @@ export default function PWAInstallPrompt() {
           ) : (
             <FaApple size={24} />
           )}
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+          <h3 className="text-lg font-semibold text-gray-800">
             Install our app
           </h3>
         </div>
-        <p className="text-sm text-black dark:text-gray-300 mb-4">
+        <p className="text-sm text-black mb-4">
           Add our app to your home screen for quick and easy access.
         </p>
         {platform === 'android' ? (
@@ -104,7 +104,7 @@ export default function PWAInstallPrompt() {
             Install
           </button>
         ) : (
-          <div className="text-sm text-gray-600 dark:text-gray-300">
+          <div className="text-sm text-gray-600">
             <p className="mb-2">To install, tap the share icon</p>
             <p>Then select &quot;Add to Home Screen&quot;</p>
           </div>
