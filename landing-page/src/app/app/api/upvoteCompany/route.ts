@@ -12,10 +12,10 @@ export async function POST(req: NextRequest) {
 
     try {
         const rpcUrl = process.env.SEPOLIA_RPC_URL;
-
+        const contractAddress = "0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc";
         const provider = new ethers.JsonRpcProvider(rpcUrl);
  
-        const contract = new ethers.Contract(contractAddress, MyContractABI.abi, await signer);
+        const contract = new ethers.Contract(contractAddress, MyContractABI.abi);
 
     } catch (error) {
         console.error("Error upvoting company:", error);

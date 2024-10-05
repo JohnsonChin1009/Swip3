@@ -64,7 +64,7 @@ const db = [
 export default function CardStack() {
   const [characters, setCharacters] = useState(db);
   const [lastDirection, setLastDirection] = useState("");
-
+  
   const swiped = (direction: string, nameToDelete: string) => {
     setLastDirection(direction);
     console.log(lastDirection);
