@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-import { ethers } from "ethers";
-import MyContractABI from "@/lib/CompanyRating.json";
+//import { ethers } from "ethers";
+//import MyContractABI from "@/lib/CompanyRating.json";
 
 export async function POST(req: NextRequest) {
     const { companyId } = await req.json();
@@ -11,8 +11,8 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-        const rpcUrl = process.env.SEPOLIA_RPC_URL;
-        const contractAddress = "0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc";
+        //const rpcUrl = process.env.SEPOLIA_RPC_URL;
+        //const contractAddress = "0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc";
         // const provider = new ethers.JsonRpcProvider(rpcUrl);
  
         // const contract = new ethers.Contract(contractAddress, MyContractABI.abi);
