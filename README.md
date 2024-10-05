@@ -38,12 +38,23 @@
 </details>
 
 ## 🤸🏽 Proof of Deployment
-<h2>🌟 Scroll</h2>
-<img src="path_to_image/image.png" alt="Scroll Logo" width="100" />
+<h2>✅ Scroll</h2>
+<img src="model/scroll.png" alt="Scroll Logo" width="100" />
 
 <ul>
   <li><strong>Smart Contract Address:</strong> 0x49e00C20c277bE3920AE14335066A451E14d7134</li>
   <li><a href="https://sepolia.scrollscan.com/address/0x49e00C20c277bE3920AE14335066A451E14d7134">View on Sepolia Scroll</a></li>
+</ul>
+
+<hr>
+
+<h2>✅ ORA</h2>
+<img src="model/ora.jpeg" alt="ORA Logo" width="100" />
+
+<ul>
+  <li><strong>Smart Contract Address:</strong> 0xa03943826246955af459280d84bdfbea66f7e42c
+</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0xa03943826246955af459280d84bdfbea66f7e42c">View on Sepolia Scroll</a></li>
 </ul>
 
 <hr>
