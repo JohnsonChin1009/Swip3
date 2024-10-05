@@ -3,7 +3,7 @@
 import { useState } from "react";
 import TinderCard from "react-tinder-card";
 import Image from "next/image";
-import { FaArrowRight, FaBriefcase } from "react-icons/fa6";
+import { FaArrowRight, FaBriefcase, FaTwitter } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
 import BottomNavBar from "@/components/custom/app/BottomNavBar";
 import { signOut } from "next-auth/react";
@@ -13,31 +13,51 @@ const db = [
     name: "Elise Chiong",
     job: "Product Designer",
     url: "/img/elise.jpeg",
-    skills: []
+    skills: [],
+    verification: {
+      twitter: true,
+      world_id: false
+    }
   },
   {
     name: "Weoy Yang Ang",
     job: "Software Engineer",
     url: "/img/weoyyang.jpeg",
-    skills: []
+    skills: [],
+    verification: {
+      twitter: false,
+      world_id: true
+    }
   },
   {
     name: "Joey Lau",
     job: "Data Scientist",
     url: "/img/joey.jpeg",
-    skills: []
+    skills: [],
+    verification: {
+      twitter: false,
+      world_id: true
+    }
   },
   {
     name: "Tan Hao Xiang",
     job: "Product Manager",
     url: "/img/tanhaoxiang.jpeg",
-    skills: []
+    skills: [],
+    verification: {
+      twitter: true,
+      world_id: false
+    }
   },
   {
     name: "Nicholas Boey",
     job: "Blockchain Researcher",
     url: "/img/nicholas.jpeg",
-    skills: ["Solidity", "Smart Contract", "Cryptography", "Layer 2 Solutions", "Decentralized Governance"]
+    skills: ["Solidity", "Smart Contract", "Cryptography", "Layer 2 Solutions", "Decentralized Governance"],
+    verification: {
+      twitter: true,
+      world_id: true
+    }
   }
 ];
 
@@ -75,6 +95,16 @@ export default function CardStack() {
               onCardLeftScreen={() => outOfFrame(character.name)}
               preventSwipe={["up", "down"]}
             >
+              {
+                character.verification.world_id && (
+                  <Image src="/worldcoin.svg" alt="world-id-verified" width={30} height={30} className="absolute top-[30px] right-[30px]"/>
+                )
+              }
+              {
+                character.verification.twitter && (
+                  <FaTwitter className={`absolute top-[30px] ${character.verification.world_id ? "right-[70px]" : "right-[30px]"}`} size={30} />
+                )
+              }
               <Image
                 alt={character.name}
                 src={character.url}
