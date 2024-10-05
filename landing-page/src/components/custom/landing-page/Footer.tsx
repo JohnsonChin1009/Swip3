@@ -23,7 +23,7 @@ export default function Footer() {
                     Copyright © 2024 Yeeth
                 </div>
                 <div className="flex text-[24px] lg:text-[32px] space-x-2 lg:space-x-5">
-                    <Link href="https://devvibe.org" target="_blank" className="hover:text-[#2B2B2B]">
+                    <Link href="https://x.com/swip355050" target="_blank" className="hover:text-[#2B2B2B]">
                         <FaSquareXTwitter/>
                     </Link>
                     <Link href="https://github.com/JohnsonChin1009/Swip3" target="_blank" className="hover:text-[#2B2B2B]">
