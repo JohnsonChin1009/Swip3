@@ -1,12 +1,7 @@
-import ProfileTopNav from "@/components/custom/app/ProfileTopNav";
+import Profile from "@/components/custom/app/Profile";
 
 export default function ProfilePage() {
     return (
-        <>
-            <div>
-                <ProfileTopNav />
-                This is profile page
-            </div>
-        </>
+      <Profile />
     )
 }

@@ -26,7 +26,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#proof-of-deployment">Proof of Deployment</a></li>
+    <li><a href="#proof-of-deployment">Proof of Contract Deployments</a></li>
     <li><a href="#problem-statement">Problem Statement</a></li>
     <li><a href="#technology-stack">Technology Stack</a></li>
     <li><a href="#association-algorithms">Association Algorithms</a></li>
@@ -37,7 +37,7 @@
   </ol>
 </details>
 
-## 🤸🏽 Proof of Deployment
+## 🤸🏽 Proof of Contract Deployments
 <h2>✅ Scroll</h2>
 <img src="model/scroll.png" alt="Scroll Logo" width="100" />
 
@@ -55,6 +55,27 @@
   <li><strong>Smart Contract Address:</strong> 0xa03943826246955af459280d84bdfbea66f7e42c
 </li>
   <li><a href="https://sepolia.scrollscan.com/address/0xa03943826246955af459280d84bdfbea66f7e42c">View on Sepolia Scroll</a></li>
+</ul>
+
+<hr>
+
+<h2>✅ Counter Contract Address</h2>
+
+<ul>
+  <li><strong>Smart Contract Address:</strong> 0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB
+</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB">View on Sepolia Scroll</a></li>
+</ul>
+
+<hr>
+
+<h2>✅ Company Rating Contract Address
+</h2>
+
+<ul>
+  <li><strong>Company Rating Contract Address:</strong> 0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc
+</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc">View on Sepolia Scroll</a></li>
 </ul>
 
 <hr>
@@ -88,13 +109,12 @@ These trends highlight the Web3 job market as one of the fastest-growing sectors
 
 Our platform leverages cutting-edge technologies to ensure a seamless, secure, and intuitive experience for both recruiters and job seekers. 
 
-- **Frontend**: Next.js, React.js
-- **Backend**: Node.js, Express
-- **Blockchain**: Ethereum, Polygon (for minting verifiable skill NFTs)
-- **Database**: IPFS (for decentralized data storage)
-- **Authentication**: zkLogin for decentralized, privacy-preserving user verification via Twitter
-- **Verification**: DeBank API for secondary verification and trust building
-- **Chat Integration**: Telegram API
+- **Frontend**: Next.js, shadcn, MagicUi, TailwindCSS
+- **Backend**: Solidity, Python, Hardhat, Scroll Sepholia, EtherJS, ORA, Llama3
+- **Blockchain**: Ethereum (Scroll Sepolia Testnet)
+- **Authentication**: WorldCoin, MetaMask (WorldID)
+- **API**: EtherJS
+- **Large Language Model**: Llama3, Stable Diffusion
 - **AI Algorithms**: Custom association algorithms for job and candidate matching
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
