@@ -42,8 +42,10 @@
 <img src="model/scroll.png" alt="Scroll Logo" width="100" />
 
 <ul>
-  <li><strong>Smart Contract Address:</strong> 0x49e00C20c277bE3920AE14335066A451E14d7134</li>
+  <li><strong>Smart Contract Address (User Profile):</strong> 0x49e00C20c277bE3920AE14335066A451E14d7134</li>
   <li><a href="https://sepolia.scrollscan.com/address/0x49e00C20c277bE3920AE14335066A451E14d7134">View on Sepolia Scroll</a></li>
+  <li><strong>Smart Contract Address (Company Deposit):</strong> 0xE7c064E99C144147A80B5fa486051d1D243a8983</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0xE7c064E99C144147A80B5fa486051d1D243a8983">View on Sepolia Scroll</a></li>
 </ul>
 
 <hr>
