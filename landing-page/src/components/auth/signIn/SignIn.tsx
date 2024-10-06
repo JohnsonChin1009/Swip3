@@ -43,7 +43,7 @@ export default function SignIn() {
           >
             <div className="flex items-center justify-center space-x-2">
               <FaTwitter size={24} />
-              <span className="font-semibold">Sign in with X (formerly Twitter)</span>
+              <span className="font-semibold">Sign in with X</span>
             </div>
           </button>
         </div>

@@ -83,7 +83,9 @@ export default function CardStack() {
 
   return (
     <>
-      <button onClick={() => signOut()}>Sign Out</button>
+      <div className="relative">
+        <button onClick={() => signOut()} className="absolute right-3.5 z-[1]">Sign Out</button>
+      </div>
       <div
         className="relative min-h-screen overflow-hidden flex justify-center items-start pt-[36px]"> {/* Added pt-[36px] */}
         {characters.map((character, index) => {
