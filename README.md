@@ -39,6 +39,10 @@
   <li><a href="https://sepolia.scrollscan.com/address/0x49e00C20c277bE3920AE14335066A451E14d7134">View on Sepolia Scroll</a></li>
   <li><strong>Smart Contract Address (Company Deposit):</strong> 0xE7c064E99C144147A80B5fa486051d1D243a8983</li>
   <li><a href="https://sepolia.scrollscan.com/address/0xE7c064E99C144147A80B5fa486051d1D243a8983">View on Sepolia Scroll</a></li>
+  <li><strong>Smart Contract Address (Counter):</strong> 0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB</li>
+  <li><a href="https://sepolia.scrollscan.com/address/0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB">View on Sepolia Scroll</a></li>
+  <li><strong>Company Rating Contract Address (Company Rating System):</strong> 0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc</li>
+    <li><a href="https://sepolia.scrollscan.com/address/0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc">View on Sepolia Scroll</a></li>
 </ul>
 
 <hr>
@@ -50,19 +54,6 @@
     <li><a href="https://sepolia.scrollscan.com/address/0xa03943826246955af459280d84bdfbea66f7e42c">View on Sepolia Scroll</a></li>
   </ul>
   <hr>
-
-  <h3>✅ Counter Contract Address</h3>
-  <ul>
-    <li><strong>Smart Contract Address:</strong> 0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB</li>
-    <li><a href="https://sepolia.scrollscan.com/address/0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB">View on Sepolia Scroll</a></li>
-  </ul>
-  <hr>
-
-  <h3>✅ Company Rating Contract Address</h3>
-  <ul>
-    <li><strong>Company Rating Contract Address:</strong> 0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc</li>
-    <li><a href="https://sepolia.scrollscan.com/address/0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc">View on Sepolia Scroll</a></li>
-  </ul>
 </div>
 
 ## Problem Statement
