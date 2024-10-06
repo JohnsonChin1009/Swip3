@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/authOptions";
 
-export const runtime = 'nodejs';
+export const runtime = "edge";
 
 // Define GET and POST route handlers
 const handler = NextAuth(authOptions);
