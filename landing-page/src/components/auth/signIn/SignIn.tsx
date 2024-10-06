@@ -1,11 +1,12 @@
 "use client";
 
-import { signIn, getSession, GetSessionParams } from 'next-auth/react';
 import Link from "next/link";
 import Image from "next/image";
 import { FaTwitter } from "react-icons/fa6";
+import { signIn } from "next-auth/react";
+import { auth } from "@/auth";
 
-export default function SignIn() { // Removed async
+export default function SignIn() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-[#e0f7fa] to-[#e6e6fa]">
       <div className="relative w-[90%] max-w-md p-8 bg-white rounded-2xl shadow-lg sm:p-10">
@@ -28,7 +29,7 @@ export default function SignIn() { // Removed async
 
         <div className="space-y-2">
           <button
-            onClick={() => signIn("worldcoin", { callbackUrl: "/app" })}
+            onClick={() => signIn("worldcoin", { redirectTo: "/app" })}
             className="w-full px-4 py-2 text-black bg-white border-2 border-black rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-gray-600"
           >
             <div className="flex items-center justify-center space-x-2">
@@ -37,7 +38,7 @@ export default function SignIn() { // Removed async
             </div>
           </button>
           <button
-            onClick={() => signIn("twitter", { callbackUrl: "/app" })}
+            onClick={() => signIn("twitter", { redirectTo: "/app" })}
             className="w-full px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-300"
           >
             <div className="flex items-center justify-center space-x-2">
@@ -63,11 +64,12 @@ export default function SignIn() { // Removed async
   );
 }
 
-// Redirect already authenticated users
-export const getServerSideProps = async (context: GetSessionParams | undefined) => { // Removed type annotations
-  const session = await getSession(context);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function getServerSideProps(ctx: any) {
+  const session = await auth(ctx)
+
   if (session) {
-    return { redirect: { destination: '/' } };
+    return { redirect: { destination: '/app' } };
   }
   return { props: {} };
-};
+}
