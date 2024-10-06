@@ -2,9 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 //import { ethers } from "ethers";
 //import MyContractABI from "@/lib/CompanyRating.json";
 
-export const config = {
-    runtime: 'experimental-edge',
-}
+export const runtime = "experimental-edge";
+
 export async function POST(req: NextRequest) {
     const { companyId } = await req.json();
     
