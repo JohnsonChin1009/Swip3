@@ -1,7 +1,7 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import TwitterProvider from "next-auth/providers/twitter";
 
-const authOptions: NextAuthOptions = {
+export const authOptions: NextAuthOptions = {
   providers: [
     TwitterProvider({
       clientId: process.env.TWITTER_CLIENT_ID || "",
@@ -18,6 +18,7 @@ const authOptions: NextAuthOptions = {
       clientSecret: process.env.WLD_CLIENT_SECRET || "",
       idToken: true,
       checks: ["state", "nonce", "pkce"],
+      // eslint-disable-next-line  @typescript-eslint/no-explicit-any
       profile(profile: any) { // You can replace 'any' with a more specific type if you have one
         return {
           id: profile.sub,
