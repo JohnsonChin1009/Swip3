@@ -4,7 +4,7 @@ import Header from "@/components/custom/app/Header";
 import CardStack from "@/components/custom/app/CardStack";
 import PWAInstallPrompt from "@/components/custom/app/PWAInstallPrompt";
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth]/authOptions";
 import { redirect } from "next/navigation";
 
 export default async function App() {

@@ -10,31 +10,24 @@
 
   <p align="center">
     A decentralized platform to match web3 job seekers with opportunities through a swipe card like gamification experience, enhanced by AI-powered association algorithms, smart contract for salary renegotiation and verifiable skill NFTs. Also, we introduce Rate My Web3 Profile, a social trend that gamifies profile optimization and helps users highlight their contributions to the Web3 space.
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#proof-of-deployment">Proof of Contract Deployments</a></li>
-    <li><a href="#problem-statement">Problem Statement</a></li>
-    <li><a href="#technology-stack">Technology Stack</a></li>
-    <li><a href="#association-algorithms">Association Algorithms</a></li>
-    <li><a href="#product-and-feature-description">Product and Feature Description</a></li>
-    <li><a href="#target-market-tam-sam-som">Target Market (TAM, SAM, SOM)</a></li>
-    <li><a href="#business-strategy-our-package">Business Strategy (Our Package)</a></li>
-    <li><a href="#why-invest-in-us">Why Invest in Us</a></li>
-  </ol>
+  <div style="text-align: left;">
+    <ol>
+      <li><a href="#proof-of-deployment">Proof of Contract Deployments</a></li>
+      <li><a href="#problem-statement">Problem Statement</a></li>
+      <li><a href="#technology-stack">Technology Stack</a></li>
+      <li><a href="#association-algorithms">Association Algorithms</a></li>
+      <li><a href="#product-and-feature-description">Product and Feature Description</a></li>
+      <li><a href="#target-market-tam-sam-som">Target Market (TAM, SAM, SOM)</a></li>
+      <li><a href="#business-strategy-our-package">Business Strategy (Our Package)</a></li>
+      <li><a href="#why-invest-in-us">Why Invest in Us</a></li>
+    </ol>
+  </div>
 </details>
 
 ## 🤸🏽 Proof of Contract Deployments
@@ -50,37 +43,27 @@
 
 <hr>
 
-<h2>✅ ORA</h2>
-<img src="model/ora.jpeg" alt="ORA Logo" width="100" />
+  <h3>✅ ORA</h3>
+  <img src="model/ora.jpeg" alt="ORA Logo" width="100" />
+  <ul>
+    <li><strong>Smart Contract Address:</strong> 0xa03943826246955af459280d84bdfbea66f7e42c</li>
+    <li><a href="https://sepolia.scrollscan.com/address/0xa03943826246955af459280d84bdfbea66f7e42c">View on Sepolia Scroll</a></li>
+  </ul>
+  <hr>
 
-<ul>
-  <li><strong>Smart Contract Address:</strong> 0xa03943826246955af459280d84bdfbea66f7e42c
-</li>
-  <li><a href="https://sepolia.scrollscan.com/address/0xa03943826246955af459280d84bdfbea66f7e42c">View on Sepolia Scroll</a></li>
-</ul>
+  <h3>✅ Counter Contract Address</h3>
+  <ul>
+    <li><strong>Smart Contract Address:</strong> 0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB</li>
+    <li><a href="https://sepolia.scrollscan.com/address/0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB">View on Sepolia Scroll</a></li>
+  </ul>
+  <hr>
 
-<hr>
-
-<h2>✅ Counter Contract Address</h2>
-
-<ul>
-  <li><strong>Smart Contract Address:</strong> 0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB
-</li>
-  <li><a href="https://sepolia.scrollscan.com/address/0xdd4081678D47B3f55a61FE0A4CF12cd3DEaAf7EB">View on Sepolia Scroll</a></li>
-</ul>
-
-<hr>
-
-<h2>✅ Company Rating Contract Address
-</h2>
-
-<ul>
-  <li><strong>Company Rating Contract Address:</strong> 0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc
-</li>
-  <li><a href="https://sepolia.scrollscan.com/address/0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc">View on Sepolia Scroll</a></li>
-</ul>
-
-<hr>
+  <h3>✅ Company Rating Contract Address</h3>
+  <ul>
+    <li><strong>Company Rating Contract Address:</strong> 0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc</li>
+    <li><a href="https://sepolia.scrollscan.com/address/0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc">View on Sepolia Scroll</a></li>
+  </ul>
+</div>
 
 ## Problem Statement
 
