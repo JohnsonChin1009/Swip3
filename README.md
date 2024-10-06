@@ -10,17 +10,6 @@
 
   <p align="center">
     A decentralized platform to match web3 job seekers with opportunities through a swipe card like gamification experience, enhanced by AI-powered association algorithms, smart contract for salary renegotiation and verifiable skill NFTs. Also, we introduce Rate My Web3 Profile, a social trend that gamifies profile optimization and helps users highlight their contributions to the Web3 space.
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
 
 <!-- TABLE OF CONTENTS -->
 <details>
