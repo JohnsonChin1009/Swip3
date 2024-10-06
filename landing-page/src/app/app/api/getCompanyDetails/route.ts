@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { ethers } from "ethers";
 import MyContractABI from "@/lib/CompanyRating.json";
 
+export const runtime = 'nodejs';
+
 // Replace with your actual contract address
 const contractAddress = "0x1eB4980f5DffC094cB5FE2E57764E6e4eE8bd4dc";
 
