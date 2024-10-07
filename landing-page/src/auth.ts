@@ -1,23 +1,21 @@
-import { NextAuthOptions } from "next-auth";
-import TwitterProvider from "next-auth/providers/twitter";
+import NextAuth from "next-auth";
+import Twitter from "next-auth/providers/twitter";
 
-export const authOptions: NextAuthOptions = {
+export const runtime = "edge";
+
+export const { auth, handlers, signIn, signOut } = NextAuth({
   providers: [
-    TwitterProvider({
-      clientId: process.env.TWITTER_CLIENT_ID || "",
-      clientSecret: process.env.TWITTER_CLIENT_SECRET || "",
-      version: "2.0",
-    }),
+    Twitter,
     {
+      issuer: "https://id.worldcoin.org",
       id: "worldcoin",
       name: "Worldcoin",
       type: "oauth" as const, // Explicitly set type to 'oauth'
       wellKnown: "https://id.worldcoin.org/.well-known/openid-configuration",
       authorization: { params: { scope: "openid" } },
-      clientId: process.env.WLD_CLIENT_ID || "",
-      clientSecret: process.env.WLD_CLIENT_SECRET || "",
-      idToken: true,
-      checks: ["state", "nonce", "pkce"],
+      clientId: process.env.AUTH_WLD_ID || "",
+      clientSecret: process.env.AUTH_WLD_SECRET || "",
+      checks: ["state", "none", "pkce"],
       // eslint-disable-next-line  @typescript-eslint/no-explicit-any
       profile(profile: any) { // You can replace 'any' with a more specific type if you have one
         return {
@@ -38,4 +36,4 @@ export const authOptions: NextAuthOptions = {
   pages: {
     signIn: "/signin",
   },
-};
+});
